@@ -1,13 +1,15 @@
 import string
 import nltk
 from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
 from collections import Counter
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 
-# Uncomment and run these once
+# Uncomment and run these once if you haven't already
 # nltk.download('punkt')
 # nltk.download('punkt_tab')
+# nltk.download('stopwords')
 
 if __name__ == "__main__":
     dataset_file = "Problem 1/iitj_corpus.txt"
@@ -27,10 +29,14 @@ if __name__ == "__main__":
     # Using NLTK tokenization
     tokens = word_tokenize(text_lower)
     
-    # Filter out numbers and weird punctuation
+    # Load base English stopwords and add our custom stop words as seen in previous results of word cloud
+    stop_words = set(stopwords.words('english'))
+    stop_words.update(['dot', 'ac', 'iitj', 'in', 'www', 'http', 'https', 'email', 'download', 'file', 'copyright'])
+    
+    # Filter out numbers, weird punctuation, and stopwords
     clean_words = []
     for word in tokens:
-        if word.isalpha() and word not in string.punctuation:
+        if word.isalpha() and word not in string.punctuation and word not in stop_words:
             clean_words.append(word)
 
     vocab = set(clean_words)

@@ -131,43 +131,43 @@ The 2D projection below demonstrates how the trained Word2Vec models successfull
 ```
 Neighbors test:
   research:
-    development (1.0)
-    with (1.0)
-    their (1.0)
-    are (1.0)
-    chemistry (1.0)
+    students (1.0)
+    student (1.0)
+    supervisor (1.0)
+    semester (1.0)
+    design (1.0)
   student:
-    minimum (0.999)
-    course (0.999)
-    registration (0.999)
-    credits (0.999)
-    students (0.999)
+    program (1.0)
+    students (1.0)
+    semester (1.0)
+    courses (1.0)
+    course (1.0)
   phd:
-    indian (0.998)
-    school (0.998)
-    at (0.992)
-    call (0.984)
-    ph (0.982)
+    school (0.999)
+    call (0.999)
+    assistant (0.998)
+    professor (0.998)
+    technology (0.998)
   exam:
-    academia (0.94)
-    microelectronics (0.938)
-    suraj (0.938)
-    strategy (0.937)
-    plasmonic (0.936)
+    video (0.85)
+    calculated (0.849)
+    specialist (0.849)
+    namely (0.844)
+    high (0.843)
 
 Analogy test:
   ug : btech :: pg : ?
-    -> circuits (0.981)
-    -> sciences (0.98)
-    -> sme (0.98)
+    -> starting (0.964)
+    -> programs (0.964)
+    -> chemical (0.964)
   btech : student :: phd : ?
-    -> ph (0.984)
-    -> at (0.983)
-    -> indian (0.976)
+    -> credits (0.978)
+    -> executive (0.978)
+    -> associate (0.977)
   theory : exam :: practical : ?
-    -> academia (0.942)
-    -> microelectronics (0.939)
-    -> strategy (0.939)
+    -> video (0.84)
+    -> specialist (0.835)
+    -> weeks (0.835)
 
 ---- SKIP-GRAM ----
 
@@ -175,43 +175,43 @@ Loading Problem 1/models/sg_d100_w5_n5.model...
 
 Neighbors test:
   research:
-    he (0.965)
-    campus (0.96)
-    established (0.958)
-    was (0.957)
-    administration (0.949)
+    events (0.987)
+    highlights (0.987)
+    registrar (0.985)
+    council (0.985)
+    teacher (0.985)
   student:
-    who (0.991)
-    admitted (0.986)
-    completed (0.985)
-    permitted (0.985)
-    may (0.984)
+    may (0.997)
+    register (0.995)
+    completed (0.994)
+    end (0.992)
+    summer (0.99)
   phd:
-    university (0.989)
-    delhi (0.986)
-    call (0.984)
-    bombay (0.978)
-    kanpur (0.978)
+    associate (0.994)
+    call (0.992)
+    assistant (0.99)
+    professor (0.99)
+    university (0.986)
   exam:
-    secretary (0.993)
-    schemes (0.993)
-    integration (0.993)
-    academia (0.992)
-    protection (0.992)
+    mo (0.992)
+    advisors (0.992)
+    weeks (0.992)
+    consultation (0.991)
+    minutes (0.991)
 
 Analogy test:
   ug : btech :: pg : ?
-    -> game (0.992)
-    -> tools (0.991)
-    -> aesthetics (0.99)
+    -> healthcare (0.996)
+    -> iot (0.992)
+    -> reality (0.99)
   btech : student :: phd : ?
-    -> in (0.846)
-    -> of (0.808)
-    -> least (0.794)
+    -> ph (0.819)
+    -> associate (0.776)
+    -> call (0.762)
   theory : exam :: practical : ?
-    -> prescribed (0.979)
-    -> certificate (0.977)
-    -> under (0.977)
+    -> provisional (0.978)
+    -> transcript (0.977)
+    -> full (0.977)
 ```
 
 ---
