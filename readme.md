@@ -118,11 +118,11 @@ python "Problem 2/evaluate.py"
 
 ### Word Cloud of IIT Jodhpur Corpus
 
-![Word Cloud](Problem 1/iitj_wordcloud.png)
+![Word Cloud](/Problem%201/iitj_wordcloud.png)
 
 ### PCA Clustering of Word Vectors
 
-![PCA Clusters](Problem 1/word_clusters.png)
+![PCA Clusters](Problem%201/word_clusters.png)
 
 The 2D projection below demonstrates how the trained Word2Vec models successfully map related academic concepts (like 'btech', 'mtech', 'ug', 'pg') into localized semantic neighborhoods.
 
