@@ -40,8 +40,8 @@ def get_2d_vectors(model_path):
     return valid_words, vectors_2d
 
 if __name__ == "__main__":
-    cbow_file = "models/cbow_d100_w5_n5.model"
-    sg_file = "models/sg_d100_w5_n5.model"
+    cbow_file = "Problem 1/models/cbow_d100_w5_n5.model"
+    sg_file = "Problem 1/models/sg_d100_w5_n5.model"
     
     # Get the 2D coordinates for both models
     cbow_words, cbow_vecs = get_2d_vectors(cbow_file)

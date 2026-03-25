@@ -4,12 +4,12 @@ from gensim.models import Word2Vec
 if __name__ == "__main__":
     # load the tokens we saved in task 1
     try:
-        with open("cleaned_tokens.txt", "r", encoding="utf-8") as f:
+        with open("Problem 1/cleaned_corpus.txt", "r", encoding="utf-8") as f:
             text = f.read()
             # just split by space since it's already tokenized and cleaned
             words = text.split() 
     except FileNotFoundError:
-        print("Can't find cleaned_tokens.txt file. Run the scrap.py and preprocess.py files first to generate it.")
+        print("Can't find cleaned_corpus.txt file. Run the scrap.py and preprocess.py files first to generate it.")
         exit()
 
     print(f"Loaded {len(words)} words.")

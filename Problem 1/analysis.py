@@ -45,8 +45,8 @@ def evaluate_model(filepath):
 if __name__ == "__main__":
     # Just comparing the deepest CBOW and SG models to see the difference
     # in clustering behavior instead of dumping all 16 to the terminal.
-    cbow_model = "models/cbow_d100_w5_n5.model"
-    sg_model = "models/sg_d100_w5_n5.model"
+    cbow_model = "Problem 1/models/cbow_d100_w5_n5.model"
+    sg_model = "Problem 1/models/sg_d100_w5_n5.model"
     
     print("---- CBOW ----")
     evaluate_model(cbow_model)

@@ -10,7 +10,7 @@ from wordcloud import WordCloud
 # nltk.download('punkt_tab')
 
 if __name__ == "__main__":
-    dataset_file = "iitj_corpus.txt"
+    dataset_file = "Problem 1/iitj_corpus.txt"
     
     try:
         with open(dataset_file, 'r', encoding='utf-8') as f:
