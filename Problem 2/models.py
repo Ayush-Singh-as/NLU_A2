@@ -77,7 +77,7 @@ if __name__ == "__main__":
     # Using dummy vocab just to initialize the models and check the parameter counts
     dummy_vocab = 30 
     
-    print("Trainable parameters (Copy these to the report!):")
+    print("Trainable parameters:")
     print(f"RNN:      {get_param_count(BasicRNN(dummy_vocab)):,}")
     print(f"BiLSTM:   {get_param_count(BiLSTM(dummy_vocab)):,}")
     print(f"RNN+Attn: {get_param_count(RNNAttention(dummy_vocab)):,}")
