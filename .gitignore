@@ -1,0 +1,57 @@
+# =========================
+# Operating System Files
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# IDEs and Editors
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# Python & Virtual Environments
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+.env
+
+# =========================
+# Machine Learning & Data
+# =========================
+# Ignore model weights and large serialized objects
+*.pth
+*.pt
+*.pkl
+*.h5
+*.onnx
+
+# Ignore raw data text files and datasets
+*.csv
+*.dat
+# Uncomment the line below if you want to ignore all text files (like generated datasets)
+# *.txt 
+
+# =========================
+# C/C++ Compiled Binaries
+# =========================
+*.exe
+*.o
+*.out
+*.obj
+*.dll
+*.so
+*.a
+
+# =========================
+# Jupyter Notebooks
+# =========================
+.ipynb_checkpoints/
